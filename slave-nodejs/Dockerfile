@@ -18,7 +18,7 @@ RUN yum install -y centos-release-scl-rh && \
     rpm -Uvh https://rpm.nodesource.com/pub_6.x/el/7/x86_64/nodejs-6.9.5-1nodesource.el7.centos.x86_64.rpm && \
     yum clean all -y
 
-RUN npm install -g nodemon uglifyjs bower gulp webpack cnpm
+RUN npm install -g nodemon uglify-js bower gulp webpack cnpm
 
 RUN chown -R 1001:0 $HOME && \
     chmod -R g+rw $HOME
